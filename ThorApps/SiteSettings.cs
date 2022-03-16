@@ -7,7 +7,7 @@ namespace ThorApps
 {
     public static class SiteSettings
     {
-        public static string PhoneNo => @"+0011 123 456";
+        public static string PhoneNo => @"+61 455 249 407";
         public static string Email => @"info@thorapps.com";
         public static string Facebook => @"https://facebook.com/thrapps";
         public static string Twitter => @"https://twitter.com/@thrapps";
