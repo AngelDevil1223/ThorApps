@@ -4,4 +4,26 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\images\bg\01.jpg" />
+    <None Include="wwwroot\images\bg\02.jpg" />
+    <None Include="wwwroot\images\step\01.jpg" />
+    <None Include="wwwroot\images\step\02.jpg" />
+    <None Include="wwwroot\images\step\03.jpg" />
+    <None Include="wwwroot\js\functions.js" />
+    <None Include="wwwroot\vendor\bootstrap-icons\bootstrap-icons.css" />
+    <None Include="wwwroot\vendor\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\vendor\font-awesome\css\all.min.css" />
+    <None Include="wwwroot\vendor\glightbox\css\glightbox.min.css" />
+    <None Include="wwwroot\vendor\glightbox\js\glightbox.min.js" />
+    <None Include="wwwroot\vendor\purecounterjs\dist\purecounter_vanilla.js" />
+    <None Include="wwwroot\vendor\tiny-slider\tiny-slider.css" />
+    <None Include="wwwroot\vendor\tiny-slider\tiny-slider.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>

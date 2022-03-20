@@ -1,11 +1,27 @@
 ﻿@inherits LayoutComponentBase
-
-<Header />
-<div role="main" class="main">
+<Header/>
+<main>
     @Body
-</div>
-<Footer />
+    <section class="py-4">
+	<div class="container">
 
-@code
-{
-}
+		<div class="row align-items-center">      
+			<div class="col-12">
+				<div class="tiny-slider">
+					<div class="tiny-slider-inner" data-arrow="false" data-autoplay="true" data-edge="2" data-dots="false"
+						data-gutter="80" data-items-xl="6" data-items-lg="5" data-items-md="4" data-items-sm="3" data-items-xs="2">
+						<div class="item"> <img src="images/client/Bupa_edited.png" class="grayscale p-3" alt=""> </div>
+						<div class="item"> <img src="images/client/DHS_edited_edited.png" class="grayscale p-3" alt=""> </div>
+						<div class="item"> <img src="images/client/Electranet-1_edited.png" class="grayscale p-3" alt=""> </div>
+						<div class="item"> <img src="images/clientimages/client/GoldCoast_edited.png" class="grayscale p-3" alt=""> </div>
+						<div class="item"> <img src="images/client/HAMBS_edited.png" class="grayscale p-3" alt=""> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
+<Footer/>
+<div class="back-top"><i class="bi bi-arrow-up-short position-absolute top-50 start-50 translate-middle"></i></div>
+
