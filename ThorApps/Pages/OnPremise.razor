@@ -1,76 +1,63 @@
-﻿@page "/onPremise"
-<section class="page-header page-header-modern bg-color-light-scale-1 page-header-md">
+﻿@page "/onpremise"
+<section class="py-7 position-relative" style="background-image: url(images/bg/10.jpg);background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <div class="bg-overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 order-2 order-md-1 align-self-center p-static">
-                <h1 class="text-dark"><strong>ON-PREMISE APPS</strong></h1>
-                <span class="sub-title text-dark">Make the most from your SharePoint and Project environment</span>
-                <p>
-                    <button class="btn btn-primary">Request a Quote</button>
-                </p>
+            <div class="col-lg-4 mx-auto text-center z-index-9">
+                <h2 class="text-white">ON-PREMISE APPS</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-white mb-0 py-0">
+                        <li class="breadcrumb-item text-primary-hover">Make the most from your SharePoint and Project environment</li>
+                    </ol>
+                </nav>
+                <a href="/onpremise#contactFrag" class="btn btn-primary">Request quote</a>
             </div>
         </div>
     </div>
 </section>
 
-<div class="container py-4">
+<section>
+    <div class="container position-relative">
+        <div class="row g-4">
+            <div class="col-md-6 col-xl-4">
+                <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
+                    <img class="card-img-top" src="/images/dashboard.jpg" alt="PROJECT INTEGRATION ENGINE"/>
+                    <span class="align-items-center"><a href="" class="btn btn-primary">PROJECT INTEGRATION ENGINE</a></span>
+                    <p><h6 class="mb-3">Project server integration in minutes, not weeks!</h6></p>
+                    <p class="card-text">The Project Integration Engine (PIE for short) makes it easy to integrate other systems data into Project Server. Create Projects, Tasks, Resources, Assignments (and more) and keep them in sync with your other systems</p>
+                </div>
+            </div>
 
-    <div class="row py-3 justify-content-center">
-        <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeIn">
-            <article>
-                <div class="row">
-                    <div class="col">
-                        <a href="#" class="text-decoration-none">
-                            <img src="img/generic/generic-corporate-3-1-full.jpg" class="img-fluid hover-effect-2 mb-3" alt="" />
-                        </a>
-                    </div>
+            <div class="col-md-6 col-xl-4">
+                <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
+                    <img class="card-img-top" src="/images/sharepoint.jpg" alt="PROJECT SNAPSHOTS"/>
+                    <span class="align-items-center"><a href="" class="btn btn-primary">PROJECT SNAPSHOTS</a></span>
+                    <p><h6 class="mb-3">Snapshot your project now or on a schedule</h6></p>
+                    <p class="card-text">Take a Snapshot of your Project as it is at a point in time. Not just the information stored in Project Server, Project Snapshots lets you take snapshots of all information related to your project even from other Line of Business systems.</p>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Project server integration in minutes, not weeks!</a></h4>
-                        <p class="text-2">The Project Integration Engine (PIE for short) makes it easy to integrate other systems data into Project Server. Create Projects, Tasks, Resources, Assignments (and more) and keep them in sync with your other systems</p>
-                    </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4">
+                <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
+                    <img class="card-img-top" src="/images/projectManagement.jpg" alt="REFLEX REPORTING"/>
+                    <span class="align-items-center"><a href="" class="btn btn-primary">REFLEX REPORTING</a></span>
+                    <p><h6 class="mb-3">Multi-site, real-time SharePoint reporting</h6></p>
+                    <p class="card-text">Reflex Reporting makes it easy to produce reports from content in your SharePoint lists. The core function of Reflex Reporting mirrors SharePoint List items into a SQL table in real-time.</p>
                 </div>
-            </article>
-        </div>
-        <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="250">
-            <article>
-                <div class="row">
-                    <div class="col">
-                        <a href="#" class="text-decoration-none">
-                            <img src="img/generic/generic-corporate-3-2-full.jpg" class="img-fluid hover-effect-2 mb-3" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Snapshot your project now or on a schedule</a></h4>
-                        <p class="text-2">Take a Snapshot of your Project as it is at a point in time. Not just the information stored in Project Server, Project Snapshots lets you take snapshots of all information related to your project even from other Line of Business systems.</p>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="col-sm-8 col-md-4 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-            <article>
-                <div class="row">
-                    <div class="col">
-                        <a href="#" class="text-decoration-none">
-                            <img src="img/generic/generic-corporate-3-3-full.jpg" class="img-fluid hover-effect-2 mb-3" alt="" />
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Multi-site, real-time SharePoint reporting</a></h4>
-                        <p class="text-2">Reflex Reporting makes it easy to produce reports from content in your SharePoint lists. The core function of Reflex Reporting mirrors SharePoint List items into a SQL table in real-time.</p>
-                    </div>
-                </div>
-            </article>
+            </div>
         </div>
     </div>
+</section>
+<section id="contactFrag" class="price-wrap pt-4">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-7">
+                <ContactDetail/>
+            </div>
+        </div>
+    </div>
+</section>
 
-</div>
-<RequestQuote/>
 @code {
 
 }

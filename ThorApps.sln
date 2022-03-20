@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32106.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThorApps", "ThorApps\ThorApps.csproj", "{151D0818-C440-44F7-A22B-A52E1FEE317C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThorApps", "ThorApps\ThorApps.csproj", "{42F015D2-7B83-4EA2-B055-8ACB5AE69ACE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{151D0818-C440-44F7-A22B-A52E1FEE317C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{151D0818-C440-44F7-A22B-A52E1FEE317C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{151D0818-C440-44F7-A22B-A52E1FEE317C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{151D0818-C440-44F7-A22B-A52E1FEE317C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F015D2-7B83-4EA2-B055-8ACB5AE69ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F015D2-7B83-4EA2-B055-8ACB5AE69ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F015D2-7B83-4EA2-B055-8ACB5AE69ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F015D2-7B83-4EA2-B055-8ACB5AE69ACE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E2D94948-5980-4E24-8A49-71B305A5D315}
+		SolutionGuid = {E5B4CBD1-DC70-434F-A2FC-622B6F6133CD}
 	EndGlobalSection
 EndGlobal

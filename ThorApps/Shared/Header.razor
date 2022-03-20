@@ -1,132 +1,44 @@
-﻿<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 148, 'stickySetTop': '-148px', 'stickyChangeLogo': true}">
-    <div class="header-body border-color-primary border-top-0 box-shadow-none">
-        <div class="header-top header-top-default border-bottom-0 border-top-0">
-            <div class="container">
-                <div class="header-row py-2">
-                    <div class="header-column justify-content-start">
-                        <div class="header-row">
-                            <nav class="header-nav-top">
-                                <ul class="nav nav-pills text-uppercase text-2">
-                                    <li class="nav-item nav-item-anim-icon">
-                                        <a class="nav-link ps-0" href="about-us.html"><i class="fas fa-angle-right"></i> About Us</a>
-                                    </li>
-                                    <li class="nav-item nav-item-anim-icon">
-                                        <a class="nav-link" href="contact-us.html"><i class="fas fa-angle-right"></i> Contact Us</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    <div class="header-column justify-content-end">
-                        <div class="header-row">
-                            <ul class="header-social-icons social-icons d-none d-sm-block social-icons-clean">
-                                <li class="social-icons-facebook"><a href="https://facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="social-icons-twitter"><a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-                                <li class="social-icons-linkedin"><a href="https://linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+﻿<header class="navbar-light navbar-fixed-top">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="navbar-brand-item" src="images/thorlogo.webp" alt="logo">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-scroll mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/">Online</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/onpremise">On-Premise</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/caseStudies">Case Studies</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://support.thorapps.com/" target="_blank">Support</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/faq">FAQ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/supportPolicy">Support policy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/contactUs">Contact us</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="header-container container z-index-2">
-            <div class="header-row py-2">
-                <div class="header-column">
-                    <div class="header-row">
-                        <div class="header-logo header-logo-sticky-change">
-                            <a href="index.html">
-                                @*<img class="header-logo-sticky opacity-0" alt="Thorapps" width="200" height="58" data-sticky-width="89" data-sticky-height="43" data-sticky-top="88" src="img/thor_apps_white.jpg">*@
-                                <img class="header-logo-non-sticky opacity-0" alt="Thorapps" width="200" height="58" src="img/thor_apps_png.png">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-column justify-content-end">
-                    <div class="header-row">
-                        <ul class="header-extra-info d-flex align-items-center">
-                            <li class="d-none d-sm-inline-flex">
-                                <div class="header-extra-info-icon">
-                                    <i class="far fa-envelope text-color-primary text-4 position-relative bottom-2"></i>
-                                </div>
-                                <div class="header-extra-info-text">
-                                    <label>SEND US AN EMAIL</label>
-                                    <strong><a href="/" class="text-decoration-none text-color-hover-primary"><span class="__cf_email__">@SiteSettings.Email</span></a></strong>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="header-extra-info-icon">
-                                    <i class="fab fa-whatsapp text-color-primary text-4 position-relative bottom-1"></i>
-                                </div>
-                                <div class="header-extra-info-text">
-                                    <label>CALL US NOW</label>
-                                    <strong><a href="tel:8001234567" class="text-decoration-none text-color-hover-primary">@SiteSettings.PhoneNo</a></strong>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-nav-bar bg-primary" data-sticky-header-style="{'minResolution': 991}" data-sticky-header-style-active="{'background-color': 'transparent'}" data-sticky-header-style-deactive="{'background-color': '#0088cc'}">
-            <div class="container">
-                <div class="header-row">
-                    <div class="header-column">
-                        <div class="header-row justify-content-end">
-                            <div class="header-nav header-nav-force-light-text justify-content-start py-2 py-lg-3" data-sticky-header-style="{'minResolution': 991}" data-sticky-header-style-active="{'margin-left': '135px'}" data-sticky-header-style-deactive="{'margin-left': '0'}">
-                                <div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
-                                    <nav class="collapse">
-                                        <ul class="nav nav-pills" id="mainNav">
-                                            <li class="dropdown dropdown-full-color dropdown-light">
-                                                <a class="dropdown-item dropdown-toggle active" href="/">
-                                                    Home
-                                                </a>
-                                            </li>
-                                            <li class="dropdown dropdown-full-color dropdown-light dropdown-mega">
-                                                <a class="dropdown-item dropdown-toggle" href="/">
-                                                    Online
-                                                </a>
-                                            </li>
-                                            <li class="dropdown dropdown-full-color dropdown-light">
-                                                <a class="dropdown-item dropdown-toggle" href="/onPremise">
-                                                    On-Premise
-                                                </a>
-                                            </li>
-                                            <li class="dropdown dropdown-full-color dropdown-light">
-                                                <a class="dropdown-item dropdown-toggle" href="/pricing">
-                                                    Pricing
-                                                </a>
-                                            </li>
-                                            <li class="dropdown dropdown-full-color dropdown-light">
-                                                <a class="dropdown-item dropdown-toggle" href="/caseStudies">
-                                                    Case Studies
-                                                </a>
-                                            </li>
-                                            <li class="dropdown dropdown-full-color dropdown-light">
-                                                <a class="dropdown-item dropdown-toggle" href="/">
-                                                    Support
-                                                </a>
-                                            </li>
-                                            <li class="dropdown dropdown-full-color dropdown-light">
-                                                <a class="dropdown-item dropdown-toggle" href="/faq">
-                                                    FAQ
-                                                </a>
-                                            </li>
-                                            <li class="dropdown dropdown-full-color dropdown-light">
-                                                <a class="dropdown-item dropdown-toggle" href="/supportPolicy">
-                                                    Support Policy
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <button class="btn header-btn-collapse-nav my-2" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-                                    <i class="fas fa-bars"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </nav>
 </header>
+
+@code {
+
+}
