@@ -1,14 +1,14 @@
 ﻿@page "/"
 
 <section class="bg-primary position-relative">
-    <div class="container pt-4 mt-4">
+    <div class="container">
         <div class="row align-items-center mb-2">
 
             <div class="col-lg-5 z-index-9">
                 <h1 class="text-white">CONNECTING PEOPLE TO DATA</h1>
                 <p class="text-white mb-0">We streamline the way insight-driven companies experience SharePoint and other Microsoft products</p>
                 <div class="my-4">
-                    <a class="btn btn-primary mb-0">Get demo</a>
+                    <a class="btn btn-primary mb-0" href="#contactUs">Get demo</a>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -24,8 +24,8 @@
                             <div class="bg-white rounded-3 position-relative py-3 px-4">
                                 <h6>Try for free</h6>
                                 <p class="mb-0">Get 30 days free trial. No card is required.</p>
-                                <div class="icon-md bg-warning bg text-dark rounded-circle position-absolute top-0 start-100 translate-middle">
-                                    <i class="fab fa-mailchimp fs-6"></i>
+                                <div class="icon-md bg-dark-soft bg text-dark rounded-circle position-absolute top-0 start-100 translate-middle">
+                                    <a class="btn btn-secondary mb-0" href="#contactUs"><i class="fa fa-mail-bulk fs-6"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-5 text-center mx-auto">
-                <h2 class="mb-3">What people says</h2>
+                <h2 class="mb-3">What people say</h2>
             </div>
         </div>
         <div class="row">
@@ -171,6 +171,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<section class="bg-primary text-primary" id="contactUs">
+    <div class="container position-relative">
+        <div class="row g-4">
+            <h6 class="col-md-12">Get started today! No credit card required.</h6>
+            <h4 class="col-md-12">Request your 30-day trial and get $50 credit to test BI Service in your own SharePoint environment</h4>
+            <p>
+                Upon submitting this form, you will be provided with the installation instructions for BI Service. These instructions will lead you through adding the app to your SharePoint site and provide further links to related documentation.
+            </p>
+            <ContactDetail />
         </div>
     </div>
 </section>

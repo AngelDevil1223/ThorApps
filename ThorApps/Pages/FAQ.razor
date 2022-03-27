@@ -1,7 +1,16 @@
 ﻿@page "/faq"
 
-
-<section class="pt-5">
+<section class="py-7 position-relative" style="background-image: url(images/thorbackground.webp); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mx-auto text-center z-index-9">
+                <h2 class="text-white">FREQUENTLY ASKED QUESTIONS</h2>
+            </div>
+        </div>
+    </div>
+</section>
+@*<section class="pt-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
@@ -16,13 +25,12 @@
             </div>
         </div>
     </div>
-</section>
+</section>*@
 <section class="pt-0">
     <div class="container">
         <div class="row g-4">
 
             <div class="col-lg-12 mx-auto">
-                <h5 class="mb-3">FREQUENTLY ASKED QUESTIONS</h5>
                 <div class="accordion accordion-icon" id="accordionExample1">
                     <div class="accordion-item mb-3">
                         <h6 class="accordion-header" id="onlineServiceGen_heading">
@@ -35,112 +43,112 @@
                              data-bs-parent="#accordionExample1">
                             <div class="accordion-body">
                                 <div class="toggle toggle-primary m-0" data-plugin-toggle>
-                                    <section class="toggle active">
+                                    <div class="row">
                                         <a class="toggle-title">How much does it cost?</a>
                                         <div class="toggle-content">
                                             <p>ThorApps Online Services use a pay as you go usage model and a Payment Plan like a mobile phone plan. Payment Plans start at $100 per month and all plans include all features and unlimited users. </p>
                                         </div>
-                                    </section>
+                                    </div>
 
-                                    <section class="toggle">
+                                    <div class="row">
                                         <a class="toggle-title">Which plan is right for me?</a>
                                         <div class="toggle-content">
                                             <p>Only data usage is charged to a customer's <a href="/pricing">Payment Plan</a>, so we encourage you to use our $50 trial valid for 30 days to have a feel of how much data you consume and choose the plan that suits you best. Once your monthly plan limit is reached, you can either continue using ThorApps services, with additional usage charges applied to your invoice or have the services disabled until the next payment period begins. To check how much data you have consumed, please go to Account Settings (Cog on the top right corner), then click on Usage Report. </p>
                                         </div>
-                                    </section>
+                                    </div>
 
-                                    <section class="toggle">
+                                    <div class="row">
                                         <a class="toggle-title">How do you calculate my usage?</a>
                                         <div class="toggle-content">
                                             <p>Usage is calculated by compute time. The average cost per minute for BI Service is U$S 1.3 and for ListSync is U$S 0.13.</p>
                                         </div>
-                                    </section>
+                                    </div>
 
-                                    <section class="toggle">
+                                    <div class="row">
                                         <a class="toggle-title">How can I buy a plan?</a>
                                         <div class="toggle-content">
                                             <p>Please download our <a href="/pricing">Purchasing Guide</a> to manage paying for your ThorApps Online Services subscription. </p>
                                         </div>
-                                    </section>
+                                    </div>
 
-                                    <section class="toggle">
+                                    <div class="row">
                                         <a class="toggle-title">What currency am I charged in?</a>
                                         <div class="toggle-content">
                                             <p>You are charged in the currency relevant to the local data center you are hosted on. In Australia this is AUD in the United States this is USD and so on.</p>
                                         </div>
-                                    </section>
+                                    </div>
 
-                                    <section class="toggle">
+                                    <div class="row">
                                         <a class="toggle-title">Can I get a free trial period?</a>
                                         <div class="toggle-content">
                                             <p>Yes, we provide every customer a free $50 credit valid for 30 days on their account on the first install to trial one single product or have full access to our suite of apps. The trial will be de-activated when you have consumed the $50 or ended the 30-day period, whichever comes first. Once the trial is de-activated, your reports will still exist, but your access is revoked. You will require a valid Payment Plan to regain access and create or export new reports. If this isn’t enough for your requirements, please contact us on info@thorapps.com.</p>
                                         </div>
-                                    </section>
+                                    </div>
 
-                                    <section class="toggle">
+                                    <div class="row">
                                         <a class="toggle-title">Can I change my plan?</a>
                                         <div class="toggle-content">
                                             <p>You can upgrade, downgrade, or cancel your Payment Plan any time you want. To do so, please go to Account Settings (Cog on the top right corner), then click on <a href="/pricing">Payment Plan</a>. Payments are calculated and processed on the 2nd day of the calendar month for the previous calendar month.</p>
                                         </div>
-                                    </section>
+                                    </div>
 
-                                    <section class="toggle">
+                                    <div class="row">
                                         <a class="toggle-title">How can I cancel my plan?</a>
                                         <div class="toggle-content">
                                             <p>
                                                 If you wish to submit a cancel request for your ThorApps services,  please contact us on info@thorapps.com and a representative will contact you in within 24 hours.
                                             </p>
                                         </div>
-                                    </section>
+                                    </div>
 
-                                    <section class="toggle">
+                                    <div class="row">
                                         <a class="toggle-title">Do users need to sign in to use the apps?</a>
                                         <div class="toggle-content">
                                             <p>Once signed in to their SharePoint Online environment users, receive no further sign in prompts. </p>
                                         </div>
-                                    </section>
-                                    <section class="toggle">
+                                    </div>
+                                    <div class="row">
                                         <a class="toggle-title">Can you ensure my data remains in my local region?</a>
                                         <div class="toggle-content">
                                             <p>We are limited to using Microsoft Azure data centers, but please contact us for your specific requirements.</p>
                                         </div>
-                                    </section>
-                                    <section class="toggle">
+                                    </div>
+                                    <div class="row">
                                         <a class="toggle-title">Can I add more people from my company to the same ThorApps account?</a>
                                         <div class="toggle-content">
                                             <p>To add more emails to your account, please navigate to your Account Settings (cog on the top right corner), click on Billing Contacts and then Add New. All emails listed on your Billing Contacts will receive updates about product usage and payment information. </p>
                                         </div>
-                                    </section>
-                                    <section class="toggle">
+                                    </div>
+                                    <div class="row">
                                         <a class="toggle-title">Do users need to sign in to use the apps?</a>
                                         <div class="toggle-content">
                                             <p>Once signed in to their SharePoint Online environment users, receive no further sign in prompts. </p>
                                         </div>
-                                    </section>
-                                    <section class="toggle">
+                                    </div>
+                                    <div class="row">
                                         <a class="toggle-title">What support does ThorApps provide?</a>
                                         <div class="toggle-content">
                                             <p>Support agreements can be tailored to meet the unique needs of an individual client. Either direct via ThorApps or your authorised support partner.</p>
                                         </div>
-                                    </section>
-                                    <section class="toggle">
+                                    </div>
+                                    <div class="row">
                                         <a class="toggle-title">Is it secure?</a>
                                         <div class="toggle-content">
                                             <p>Yes, please contact us for specific queries.</p>
                                         </div>
-                                    </section>
-                                    <section class="toggle">
+                                    </div>
+                                    <div class="row">
                                         <a class="toggle-title">What browsers are supported?</a>
                                         <div class="toggle-content">
                                             <p>Internet Explorer 11, Chrome and Edge.</p>
                                         </div>
-                                    </section>
-                                    <section class="toggle">
+                                    </div>
+                                    <div class="row">
                                         <a class="toggle-title">Do you have more questions?</a>
                                         <div class="toggle-content">
                                             <p>Please contact us by calling +61 455 249 407 or emailing info@thorapps.com.</p>
                                         </div>
-                                    </section>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -153,63 +161,63 @@
                             </button>
                         </h6>
                         <!-- Body -->
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="biServiceHeading"
+                        <div id="biService" class="accordion-collapse collapse" aria-labelledby="biServiceHeading"
                              data-bs-parent="#biService">
                             <div class="accordion-body">
-                                <section class="toggle active">
+                                <div class="toggle active">
                                     <a class="toggle-title">How can I install the BI Service app?</a>
                                     <div class="toggle-content">
                                         <p>Please download our <a href="https://biservice.thorapps.com/Help/ThorApps%20BI%20Service%20Installation%20Guide.pdf">Installation Guide</a> to install BI Service from your SharePoint site through the App Store. If you have more questions, please submit your query on our Support page or contact us on info@thorapps.com.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I set up an environment to use BI Service? </a>
                                     <div class="toggle-content">
                                         <p>All ThorApps Online services support the concept of “Environments” and allow you to access common content managed by our Apps from multiple Site Collections. This feature allows you to keep a level of separation between different Site Collections. Please download our <a href="https://biservice.thorapps.com/Help/ThorApps%20BI%20Service%20Environment%20Setup%20Guide.pdf">Environment Set Up Guide</a> to set up your environment.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I create and export an SSRS report? </a>
                                     <div class="toggle-content">
                                         <p>Please download our <a href="https://biservice.thorapps.com/Help/ThorApps%20BI%20Service%20User%20Guide.pdf">User Guide</a> to learn how to create an SSRS report using Microsoft Report Builder or Visual Studio 2017 and publish it to the BI Service Report Library. </p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Can I use my own SSRS environment?</a>
                                     <div class="toggle-content">
                                         <p>Yes. There are some restrictions you’ll need to acknowledge for us to ensure our BI Service app continues to run reliably.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Can my users create their own BI Service reports?</a>
                                     <div class="toggle-content">
                                         <p>Yes. Reports are created using Microsoft Report Builder or Visual Studio SSDT extensions, both are free.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Can I join, filter and aggregate SharePoint list and project data in report queries, like I would in an On-Premise environment?</a>
                                     <div class="toggle-content">
                                         <p>Yes. When using our ListSync and ProjectSync apps to extract Project and SharePoint list data, you can use all the power of SQL server to analyze your data and present it with our BI Service app.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Can you use a shared data source to create reports?</a>
                                     <div class="toggle-content">
                                         <p>Yes, you can. To learn how, please <a href="https://biservice.thorapps.com/Help/ThorApps%20BI%20Service%20User%20Guide.pdf">download our User Guide.</a></p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I uninstall the app?</a>
                                     <div class="toggle-content">
                                         <p>Please <a href="https://biservice.thorapps.com/Help/ThorApps%20BI%20Service%20Uninstall%20Guide.pdf">download our Uninstall Guide</a> to learn how to uninstall BI Service.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Can I get some sample data to trail BI Service?</a>
                                     <div class="toggle-content">
                                         <p>We provide a copy of the Microsoft AdventureWorks sample database on Azure with connection details in our <a href="https://thorapps.sharepoint.com/Products/SPOBIService/Product%20Documentation/ThorApps%20BI%20Service%20Quick%20Start%20Guide.pdf">Quick Start Guide</a>. Please be aware this is for demo purposes only and the credentials may change at any time (but will also be updated in this guide).</p>
                                     </div>
-                                </section>
+                                </div>
 
                                 <div cass="videoContent">
                                 </div>
@@ -227,31 +235,31 @@
                         <div id="listSyncServ" class="accordion-collapse collapse" aria-labelledby="listSyncServ_heading"
                              data-bs-parent="#accordionExample1">
                             <div class="accordion-body">
-                                <section class="toggle active">
+                                <div class="toggle active">
                                     <a class="toggle-title">How can I install the ListSync app?</a>
                                     <div class="toggle-content">
                                         <p>Please <a href="https://listsync.thorapps.com/Help/ThorApps%20ListSync%20Service%20Installation%20Guide.pdf">download our Installation Guide</a> to install ListSync from your SharePoint site through the App Store. For further information, please submit your query on our Support page or contact us on info@thorapps.com.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I create lists with ListSync?</a>
                                     <div class="toggle-content">
                                         <p>Please <a href="https://listsync.thorapps.com/Help/ThorApps%20ListSync%20Service%20User%20Guide.pdf">download our User Guide</a> to learn how to create and expose a SharePoint list for reporting, create Reporting Schemas and reflect SharePoint lists in a SharePoint Online environment.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I set up an environment to use ListSync?</a>
                                     <div class="toggle-content">
                                         <p>All ThorApps Online services support the concept of “Environments” and allow you to access common content managed by our Apps from multiple Site Collections. This feature allows you to keep a level of separation between different Site Collections. Please download <a href="https://listsync.thorapps.com/Help/ThorApps%20ListSync%20Service%20Environment%20Setup%20Guide.pdf">our Environment Set Up Guide</a> to set up your environment.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Can I use my own SQL environment (either on-premise or on my own Azure subscription)?</a>
                                     <div class="toggle-content">
                                         <p>Yes. There are some restrictions you’ll need to acknowledge for us to ensure our ListSync app continues to run reliably.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">What about performance impact? Will ListSync slow my SharePoint Online environment down?</a>
                                     <div class="toggle-content">
                                         <p>
@@ -259,19 +267,19 @@
                                             Some additional minor load is added to your environment, but it's negligible.
                                         </p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I uninstall the ListSync app?</a>
                                     <div class="toggle-content">
                                         <p>Please <a href="https://listsync.thorapps.com/Help/ThorApps%20ListSync%20Service%20Uninstall%20Guide.pdf">download our Uninstall Guide</a> to learn how to uninstall ListSync.</p>
                                     </div>
-                                </section>
-                                <section>
+                                </div>
+                                <div>
                                     <a class="toggle-title">How can I buy a plan?</a>
                                     <div class="toggle-content">
                                         <p>Please download our <a href="/pricing">Purchasing Guide</a> to manage paying for your ThorApps Online Services subscription.</p>
                                     </div>                                                            
-                                </section>
+                                </div>
                                 <div class="videos">
                                 </div>
                             </div>
@@ -287,36 +295,36 @@
                         <div id="projService" class="accordion-collapse collapse" aria-labelledby="projService-heading"
                              data-bs-parent="#accordionExample1">
                             <div class="accordion-body">
-                                <section class="toggle active">
+                                <div class="toggle active">
                                     <a class="toggle-title">Can I use my own SQL environment (either On Premise or on my own Azure subscription)?</a>
                                     <div class="toggle-content">
                                         <p>Yes. There are some restrictions you’ll need to acknowledge for us to ensure our ProjectSync app continues to run reliably.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I install the ProjectSync app?</a>
                                     <div class="toggle-content">
                                         <p>Please check out <a href="https://projectsync.thorapps.com/Help/ThorApps%20ProjectSync%20Service%20Installation%20Guide.pdf">our Installation Guide</a> to download and install ProjectSync to your SharePoint site through the App Catalog. For further information, please submit your query on our Support page or contact us on info@thorapps.com. </p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I update database tables with project data?</a>
                                     <div class="toggle-content">
                                         <p>Please <a href="https://projectsync.thorapps.com/Help/ThorApps%20ProjectSync%20Service%20User%20Guide.pdf">download our User Guide</a> to learn all the steps required to edit Service Accounts, Entity Type Sets and process Project Data.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I set up an environment to use ProjectSync?</a>
                                     <div class="toggle-content">
                                         <p>All ThorApps Online services support the concept of “Environments” and allow you to access common content managed by our Apps from multiple Site Collections. This feature allows you to keep a level of separation between different Site Collections. Please download <a href="https://projectsync.thorapps.com/Help/ThorApps%20ProjectSync%20Service%20Environment%20Setup%20Guide.pdf">our Environment Set Up Guide</a> to set up your environment.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">How can I uninstall the ProjectSync app?</a>
                                     <div class="toggle-content">
                                         <p>Please <a href="https://projectsync.thorapps.com/Help/ThorApps%20ProjectSync%20Service%20Uninstall%20Guide.pdf">download our Uninstall Guide</a> to learn how to uninstall ProjectSync.</p>
                                     </div>
-                                </section>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -330,30 +338,30 @@
                         <div id="onPremiseGen" class="accordion-collapse collapse" aria-labelledby="onPremiseGen-heading"
                              data-bs-parent="#accordionExample1">
                             <div class="accordion-body">
-                                <section class="toggle active">
+                                <div class="toggle active">
                                     <a class="toggle-title">How much does it cost?</a>
                                     <div class="toggle-content">
                                         <p>ThorApps On-Premise Products use an annual virtual CPU license pricing model. Each product has a rate per virtual CPU on the SharePoint Servers. Please contact us for a quote.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Can I get a free trial period?</a>
                                     <div class="toggle-content">
                                         <p>Yes. All ThorApps products for SharePoint On-Premise are fully functional for the first 30 days for free as a trial period. If this isn’t enough for your requirements, please contact us, ThorApps will be happy to assist.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">What support does ThorApps provide?</a>
                                     <div class="toggle-content">
                                         <p>Support agreements can be tailored to meet the unique needs of an individual client. Either direct via ThorApps or your authorized support partner.</p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Do you have more questions?</a>
                                     <div class="toggle-content">
                                         <p>Please contact us by calling +61 455 249 407 or emailing info@thorapps.com.</p>
                                     </div>
-                                </section>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -367,7 +375,7 @@
                         <div id="reflexReporting" class="accordion-collapse collapse" aria-labelledby="reflexReporting-heading"
                              data-bs-parent="#accordionExample1">
                             <div class="accordion-body">
-                                <section class="toggle active">
+                                <div class="toggle active">
                                     <a class="toggle-title">Isn’t it enough just to query the SharePoint content databases directly – why do we need Reflex Reporting?</a>
                                     <div class="toggle-content">
                                         <p>
@@ -380,8 +388,8 @@
                                             Reflex Reporting solves these problems, by creating a reporting database specifically for reports to read the content. The reporting database is made up of tables that represent the list structures defined in SharePoint and use easy to identify field names (i.e. the same field names the user sees in a list).
                                         </p>
                                     </div>
-                                </section>
-                                <section class="toggle">
+                                </div>
+                                <div class="row">
                                     <a class="toggle-title">Why should I choose Reflex Reporting – doesn’t SharePoint web services provide everything I need to produce reports?</a>
                                     <div class="toggle-content">
                                         <p>
@@ -399,7 +407,7 @@
                                             Reflex Reporting avoids these problems, by allowing the report to query content directly from a SQL server database, providing all the performance and functions of SQL server (i.e. table indexes, sorting, grouping, summing etc). Virtually all reporting tools provide report authors with an easy to use interface to query SQL server tables and most report authors know and understand how to create a SQL query.
                                         </p>
                                     </div>
-                                </section>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -413,7 +421,7 @@
                         <div id="projIntegration" class="accordion-collapse collapse" aria-labelledby="projIntegration-heading"
                              data-bs-parent="#accordionExample1">
                             <div class="accordion-body">
-                                <section class="toggle active">
+                                <div class="toggle active">
                                     <a class="toggle-title">Why is the Project Integration Engine a better option than hiring a developer?</a>
                                     <div class="toggle-content">
                                         <p>
@@ -427,7 +435,7 @@
                                         </p>
                                         <p>With PIE, integration is simplified and managed by a Project Server Consultant or Administrator. </p>
                                     </div>
-                                </section>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -441,7 +449,7 @@
                         <div id="projSnapShots" class="accordion-collapse collapse" aria-labelledby="projSnapShots-heading"
                              data-bs-parent="#accordionExample1">
                             <div class="accordion-body">
-                                <section class="toggle active">
+                                <div class="toggle active">
                                     <a class="toggle-title">Project Server already provides two methods to support time comparison reporting, so what does this tool help with?</a>
                                     <div class="toggle-content">
                                         The two Project Server solutions to time comparison reporting are through Baselines and the Archive database. The problem with baselines is there are only 10 slots to snapshot information into and you rely on the users to baseline a project into the right slot and at the right time. Plus, you can’t include information from other business systems or non-project related information (i.e. Custom Fields, or Resource Rates, even if it is stored in Project Server).<br />
@@ -453,7 +461,7 @@
                                         </ul>
                                         Project Snapshots is designed to address these issues specifically.
                                     </div>
-                                </section>
+                                </div>
                             </div>
                         </div>
                     </div>

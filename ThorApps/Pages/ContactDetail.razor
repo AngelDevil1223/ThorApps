@@ -1,52 +1,96 @@
-﻿<h3 class="mb-3">Get in touch</h3>
-@if(contact!=null)
+﻿@using  System.ComponentModel
+@inject IJSRuntime JS
+
+<h3 class="mb-3">Get in touch</h3>
+@if (contact != null)
 {
     <EditForm Model=contact OnValidSubmit=Save class="row g-3">
         <DataAnnotationsValidator />
         <ValidationSummary />
-    <div class="col-md-6">
-        <label class="form-label">First name</label>
-        <InputText @bind-Value="contact.FirstName" class="form-control" placeholder="Please enter first name"></InputText>
-    </div>
-    <div class="col-md-6">
-        <label class="form-label">Last name</label>
-        <InputText @bind-Value="contact.LastName" class="form-control" placeholder="Please enter last name"></InputText>
-    </div>
-    <div class="col-md-6">
-        <label class="form-label">Email </label>
-        <InputText @bind-Value="contact.Email" class="form-control" placeholder="Please enter email"></InputText>
-    </div>
-    <div class="col-md-6">
-        <label class="form-label">Job title </label>
-        <InputText @bind-Value="contact.JobTitle" class="form-control" placeholder="Please enter job title"></InputText>
-    </div>
-    <div class="col-md-6">
-        <label class="form-label">Phone number </label>
-        <InputText @bind-Value="contact.Phone" class="form-control" placeholder="Please enter phone number"></InputText>
-    </div>
-    <div class="col-md-6">
-        <label class="form-label">Country </label>
-        <InputText @bind-Value="contact.Country" class="form-control" placeholder="Please enter country"></InputText>
-    </div>
-    <div class="col-md-12">
-        <label class="form-label">Company </label>
-        <InputText @bind-Value="contact.Company" class="form-control" placeholder="Please enter company"></InputText>
-    </div>
+        <div class="col-md-6">
+            <label class="form-label">First name</label>
+            <InputText @bind-Value="contact.FirstName" class="form-control" placeholder="Please enter first name"></InputText>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Last name</label>
+            <InputText @bind-Value="contact.LastName" class="form-control" placeholder="Please enter last name"></InputText>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Email </label>
+            <InputText @bind-Value="contact.Email" class="form-control" placeholder="Please enter email"></InputText>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Job title </label>
+            <InputText @bind-Value="contact.JobTitle" class="form-control" placeholder="Please enter job title"></InputText>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Phone number </label>
+            <InputText @bind-Value="contact.Phone" class="form-control" placeholder="Please enter phone number"></InputText>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Country </label>
+            <InputText @bind-Value="contact.Country" class="form-control" placeholder="Please enter country"></InputText>
+        </div>
+        <div class="col-md-12">
+            <label class="form-label">Company </label>
+            <InputText @bind-Value="contact.Company" class="form-control" placeholder="Please enter company"></InputText>
+        </div>
 
-    <div class="col-12">
-        <label class="form-label">Message</label>
-        <InputTextArea @bind-Value="contact.Message" class="form-control" rows="3" placeholder="Please enter Message"></InputTextArea>
-    </div>
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary mb-0">Send message</button>
-    </div>
-</EditForm>
+        <div class="col-12">
+            <label class="form-label">Message</label>
+            <InputTextArea @bind-Value="contact.Message" class="form-control" rows="3" placeholder="Please enter Message"></InputTextArea>
+        </div>
+        <div class="col-md-12">
+            <div id="recaptcha_container"></div>
+            <br />
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary mb-0">@ButtonTitle</button>
+        </div>
+    </EditForm>
 }
 
 @code {
+    [Parameter]
+    public string Product { get; set; } = "General";
+    [Parameter]
+    public string ButtonTitle { get; set; } = "Send message";
+
     ContactModel contact = new();
+
+    private int WidgetId;
+
+    public string reCAPTCHA_response;
+    string googleApiKey = "Your API key";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("loadScript", "https://www.google.com/recaptcha/api.js");
+
+        await JS.InvokeVoidAsync("loadScript", "js/JsOfReCAPTCHA.js");
+
+        if (firstRender)
+        {
+            WidgetId = await JS.InvokeAsync<int>("render_recaptcha", DotNetObjectReference.Create(this), "recaptcha_container", googleApiKey);
+        }
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
     void Save()
     {
         //write code here to save this data
+    }
+
+
+    [JSInvokable, EditorBrowsable(EditorBrowsableState.Never)]
+    public void CallbackOnSuccess(string response)
+    {
+        reCAPTCHA_response = response;
+    }
+
+    [JSInvokable, EditorBrowsable(EditorBrowsableState.Never)]
+    public void CallbackOnExpired()
+    {
     }
 }
