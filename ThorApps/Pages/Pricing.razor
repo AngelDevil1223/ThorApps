@@ -4,7 +4,7 @@
     <div class="bg-overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 mx-auto text-center z-index-9">
+            <div class="col-lg-12 mx-auto text-center z-index-9">
                 <ol class="breadcrumb justify-content-center text-white mb-0 py-0">
                     <li class="breadcrumb-item text-primary-hover">ONLINE APPS</li>
                 </ol>
@@ -21,14 +21,62 @@
 
 <section>
     <div class="container position-relative">
-        <div class="row g-4">
-            <div class="col-md-12 col-xl-8 text-center">
-                <p>Create your ThorApps account today and get a $50-plan for free, valid for 30 days. Try out a single product, or trial the full suite of powerful apps to boost your data experience in SharePoint Online.</p>
+        <div class="row">
+            <div class="col-md-12 col-xl-12 text-center">
+                <h6>Create your ThorApps account today and get a $50-plan for free, valid for 30 days. Try out a single product, or trial the full suite of powerful apps to boost your data experience in SharePoint Online.</h6>
+            </div>
+            <div class="col-md-12 align-items-center">
+                <button type="button" class="btn btn-primary" @onclick="OpenModal">
+                    LEARN HOW WE CALCULATE PRICE
+                </button>
             </div>
         </div>
     </div>
 </section>
-
+<section class="bg-primary text-white">
+    <div class="row g-4">
+        <div class="col-md-2 col-xl-2 d-flex align-items-stretch">
+            <div class="card card-body shadow  rounded-4 rounded-bottom-right-0 p-4">
+                <div class="icon-md fs-6 text-primary bg-default">
+                    <i class="fa fa-file-archive"></i>
+                </div>
+                <h6 class="mb-3">GET STARTED WITHOUT A CREDIT CARD</h6>
+            </div>
+        </div>
+        <div class="col-md-3 col-xl-3 d-flex align-items-stretch">
+            <div class="card card-body shadow  rounded-4 rounded-bottom-right-0 p-4">
+                <div class="icon-md fs-6 text-primary bg-default">
+                    <i class="fa fa-heart"></i>
+                </div>
+                <h6 class="mb-3">BENEFIT FROM ALL FEATURES, REGARDLESS OF THE PLAN YOU CHOOSE</h6>
+            </div>
+        </div>
+        <div class="col-md-3 col-xl-3 d-flex align-items-stretch">
+            <div class="card card-body shadow  rounded-4 rounded-bottom-right-0 p-4">
+                <div class="icon-md fs-6 text-primary bg-default">
+                    <i class="fa fa-clock"></i>
+                </div>
+                <h6 class="mb-3">NO CONTRACT*: CANCEL, DOWNGRADE OR UPGRADE ANYTIME YOU NEED</h6>
+            </div>
+        </div>
+        <div class="col-md-2 col-xl-2 d-flex align-items-stretch">
+            <div class="card card-body shadow  rounded-4 rounded-bottom-right-0 p-4">
+                <div class="icon-md fs-6 text-primary bg-default">
+                    <i class="fa fa-redo"></i>
+                </div>
+                <h6 class="mb-3">FREE UPDATES INCLUDED</h6>
+            </div>
+        </div>
+        <div class="col-md-2 col-xl-2 d-flex align-items-stretch">
+            <div class="card card-body shadow  rounded-4 rounded-bottom-right-0 p-4">
+                <div class="icon-md fs-6 text-primary bg-default">
+                    <i class="fa fa-location-arrow"></i>
+                </div>
+                <h6 class="mb-3">UNLIMITED USERS AND ENVIRONMENTS</h6>
+            </div>
+        </div>
+    </div>
+</section>
 <div class="container position-relative">
     <div class="row g-8 justify-content-center table-responsive">
         <table class="table">
@@ -287,7 +335,29 @@
         </table>
     </div>
 </div>
-
+<ModalWindow @ref="howWeCalculate" Title="PRICING">
+    <div>
+        <p>Consumption is calculated by compute time. You can find out the per minute compute rate and monitor it from within each app.</p>
+        <p>Once your monthly plan limit is reached, you can either continue using ThorApps services, with additional usage charges applied to your invoice, or have the services disabled until the next payment period begins.</p>
+        <p>
+            <strong>- For BI Service:</strong><br />
+            BI Service price is based on compute time to run report executions and subscriptions deliveries.
+            A report execution is a user running 1 report in a web browser (either in the app or in a web part). The average report takes 3.5 seconds.<br />
+            A subscription delivery is a back-ground job that runs a report and either emails it or publishes it to a SharePoint Library. The average time per delivery is 1.9 seconds.
+        </p>
+        <p>
+            <strong>- For ListSync:</strong><br />
+            ListSync price is based on item sync's and list instance sync's.
+            An item sync is a user either creating, editing or deleting one item in a SharePoint list or library. The average time per item event is 2.7 seconds.<br />
+            List Instance Sync's are daily background jobs that cycle through all list instances configured for replication, and re-sync (just in case Microsoft dropped an event). The average time per list instance (average of about 8 items) is 2.5 seconds.
+        </p>
+    </div>
+</ModalWindow>
 @code {
+    ModalWindow howWeCalculate;
 
+    void OpenModal()
+    {
+        howWeCalculate.Show();
+    }
 }
