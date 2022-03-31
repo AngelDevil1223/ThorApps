@@ -1,55 +1,64 @@
-﻿<footer class="bg-dark pt-5">
-	<div class="container">		
-		<div class="row">
-			<div class="col-md-6">
-				<img src="images/thorlogo.webp" class="footer-brand-item mb-6" alt="logo">
-				<p class="text-primary-hover mb-0"><a href="#" class="text-white"><i class="bi bi-telephone-plus me-2"></i>+61 403 349 647</a></p>
-				<p class="text-primary-hover mb-0">Bear Entrepreneurial Group Pty</p>
-				<p class="text-primary-hover mb-0">Ltd trading as ThorApps</p>
-				<p class="text-primary-hover">ABN 40 156 405 275</p>				
+﻿@inject IJSRuntime JS
+<footer class="bg-dark pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/thorlogo.webp" class="footer-brand-item mb-6" alt="logo">
+                <p class="text-primary-hover mb-0"><a href="#" class="text-white"><i class="bi bi-telephone-plus me-2"></i>+61 403 349 647</a></p>
+                <p class="text-primary-hover mb-0">Bear Entrepreneurial Group Pty</p>
+                <p class="text-primary-hover mb-0">Ltd trading as ThorApps</p>
+                <p class="text-primary-hover">ABN 40 156 405 275</p>
 
-			</div>
-			<div class="col-md-6">
-				<ul class="list-inline float-end">
-					<li class="list-inline-item">
-						<h6 class="text-white">Follow us: </h6>
-					</li>
-					<li class="list-inline-item">
-						<a href="#" class="btn btn-white btn-round mb-2"><i class="fab fa-fw fa-twitter"></i></a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#" class="btn btn-white btn-round mb-2"><i class="fab fa-instagram"></i></a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#" class="btn btn-white btn-round mb-2"><i class="fab fa-facebook-f"></i></a>
-					</li>
-					<li class="list-inline-item">
-						<a href="#" class="btn btn-white btn-round mb-2"><i class="fab fa-fw fa-linkedin-in"></i></a>
-					</li>						
-				</ul>										
-			</div>
-		</div>
-		<hr class="mt-4 mb-0"> 
-		<div class="row align-items-center py-4">
-			<div class="col-md-6">
-				<div class="text-center text-md-start text-primary-hover text-white ">&copy;@DateTime.Now.Year 
-					<a href="https://www.thorapps.com/" class="text-reset btn-link" target="_blank">Thor Apps</a>. All rights reserved
-				</div>
-			</div>
-			
-			<div class="col-md-6">
-					<p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/privacyPolicy">Privacy Policy |</a></p>
-					<p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/returnsPolicy">Returns Policy |</a></p>
-					<p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/termsandconditions">Terms & Conditions |</a></p>
-					<p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/eula">End User Licence Agreement |</a></p>
-					<p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/shippinganddelivery">Shipping and Delivery |</a></p>
-					<p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/termsofservice">Terms of Service |</a></p>
-					<p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="https://support.thorapps.com/Downloads/ThorApps%20Online%20Services%20SLA.pdf">Service Level Agreement |</a></p>         
-			</div>
-		</div>   
+            </div>
+            <div class="col-md-6">
+                <ul class="list-inline float-end">
+                    <li class="list-inline-item">
+                        <h6 class="text-white">Follow us: </h6>
+                    </li>
+                    @*<li class="list-inline-item">
+                            <a href="#" class="btn btn-white btn-round mb-2"><i class="fab fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn btn-white btn-round mb-2"><i class="fab fa-instagram"></i></a>
+                        </li>*@
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/ThorAppsForSharePoint/" class="btn btn-white btn-round mb-2"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    @*<li class="list-inline-item">
+                            <a href="#" class="btn btn-white btn-round mb-2"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        </li>*@
+                </ul>
+            </div>
+        </div>
+        <hr class="mt-4 mb-0">
+        <div class="row align-items-center py-4">
+            <div class="col-md-6">
+                <div class="text-center text-md-start text-primary-hover text-white ">
+                    &copy;@DateTime.Now.Year
+                    <a href="https://www.thorapps.com/" class="text-reset btn-link" target="_blank">Thor Apps</a>. All rights reserved
+                </div>
+            </div>
 
-	</div>
+            <div class="col-md-6">
+                <p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/privacyPolicy">Privacy Policy |</a></p>
+                <p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/returnsPolicy">Returns Policy |</a></p>
+                <p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/termsandconditions">Terms & Conditions |</a></p>
+                <p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/eula">End User Licence Agreement |</a></p>
+                <p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/shippinganddelivery">Shipping and Delivery |</a></p>
+                <p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="/termsofservice">Terms of Service |</a></p>
+                <p class="nav-item float-end"><a class="nav-link text-white text-primary-hover p-0" href="https://support.thorapps.com/Downloads/ThorApps%20Online%20Services%20SLA.pdf">Service Level Agreement |</a></p>
+            </div>
+        </div>
+
+    </div>
 </footer>
 @code {
-
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("SetUpTinySlider");
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
 }

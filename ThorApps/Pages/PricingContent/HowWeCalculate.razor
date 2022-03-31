@@ -1,0 +1,54 @@
+﻿<div id="learnHow" class="@ModalClass" tabindex="-1" style="@ModalDisplay">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="bg-primarymodal-header">
+                <div class="bg-primary text-white">
+                    <h5 class="modal-title" id="mdLabel">PRICING</h5>
+                    <button type="button" class="close" @onclick="Hide">
+                        <span>&times;</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-body bg-primary">
+                <div class="text-white">
+                    <div class="row">
+                        <p>Consumption is calculated by compute time. You can find out the per minute compute rate and monitor it from within each app.</p>
+                        <p>Once your monthly plan limit is reached, you can either continue using ThorApps services, with additional usage charges applied to your invoice, or have the services disabled until the next payment period begins.</p>
+                        <p>
+                            <strong>- For BI Service:</strong><br />
+                            BI Service price is based on compute time to run report executions and subscriptions deliveries.
+                            A report execution is a user running 1 report in a web browser (either in the app or in a web part). The average report takes 3.5 seconds.<br />
+                            A subscription delivery is a back-ground job that runs a report and either emails it or publishes it to a SharePoint Library. The average time per delivery is 1.9 seconds.
+                        </p>
+                        <p>
+                            <strong>- For ListSync:</strong><br />
+                            ListSync price is based on item sync's and list instance sync's.
+                            An item sync is a user either creating, editing or deleting one item in a SharePoint list or library. The average time per item event is 2.7 seconds.<br />
+                            List Instance Sync's are daily background jobs that cycle through all list instances configured for replication, and re-sync (just in case Microsoft dropped an event). The average time per list instance (average of about 8 items) is 2.5 seconds.
+                        </p>
+                    </div>
+                    <div class="row g-4 d-flex align-content-center">
+                        <a href="/contactUs" class="btn btn-outline-primary">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    static string ModalClass = "modal fade";
+    static string ModalDisplay = "display: none;";
+    public void Show()
+    {
+        ModalClass = "modal fade show";
+        ModalDisplay = "display: block;";
+        StateHasChanged();
+    }
+    void Hide()
+    {
+        ModalClass = "modal fade";
+        ModalDisplay = "display: none;";
+        StateHasChanged();
+    }
+}

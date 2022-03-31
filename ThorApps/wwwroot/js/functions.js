@@ -1,25 +1,3 @@
-/**
-* Formax - Creative Agency Bootstrap Template
-*
-* @author Webestica (https://www.webestica.com/)
-* @version 1.0.0
-**/
-
-
-/* ===================
-Table Of Content
-======================
-01 PRELOADER
-02 TINY SLIDER
-03 MEGA MENU
-04 BACK TO TOP
-05 GLIGHTBOX
-06 ISOTOPE
-07 AOS ANIMATION
-08 PRICING
-
-====================== */
-
 "use strict";
 !function () {
 

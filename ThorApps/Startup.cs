@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ThorApps.Services;
 
 namespace ThorApps
 {
@@ -25,6 +26,10 @@ namespace ThorApps
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            Dictionary<string, string> mailSettings = Configuration.GetSection("EmailSettings")
+                .GetChildren()
+                .Select(x => new KeyValuePair<string, string>(x.Key, x.Value)).ToDictionary(x => x.Key, x => x.Value);
+            EmailSender.Configure(mailSettings);
             services.AddRazorPages();
             services.AddServerSideBlazor();
         }

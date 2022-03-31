@@ -1,4 +1,5 @@
 ﻿@using  System.ComponentModel
+@using ThorApps.Services
 @inject IJSRuntime JS
 
 <h3 class="mb-3">Get in touch</h3>
@@ -9,36 +10,35 @@
         <ValidationSummary />
         <div class="col-md-6">
             <label class="form-label">First name</label>
-            <InputText @bind-Value="contact.FirstName" class="form-control" placeholder="Please enter first name"></InputText>
+            <InputText @bind-Value="contact.FirstName" class="form-control"></InputText>
         </div>
         <div class="col-md-6">
             <label class="form-label">Last name</label>
-            <InputText @bind-Value="contact.LastName" class="form-control" placeholder="Please enter last name"></InputText>
+            <InputText @bind-Value="contact.LastName" class="form-control"></InputText>
         </div>
         <div class="col-md-6">
             <label class="form-label">Email </label>
-            <InputText @bind-Value="contact.Email" class="form-control" placeholder="Please enter email"></InputText>
+            <InputText @bind-Value="contact.Email" class="form-control"></InputText>
         </div>
         <div class="col-md-6">
             <label class="form-label">Job title </label>
-            <InputText @bind-Value="contact.JobTitle" class="form-control" placeholder="Please enter job title"></InputText>
+            <InputText @bind-Value="contact.JobTitle" class="form-control"></InputText>
         </div>
         <div class="col-md-6">
             <label class="form-label">Phone number </label>
-            <InputText @bind-Value="contact.Phone" class="form-control" placeholder="Please enter phone number"></InputText>
+            <InputText @bind-Value="contact.Phone" class="form-control"></InputText>
         </div>
         <div class="col-md-6">
             <label class="form-label">Country </label>
-            <InputText @bind-Value="contact.Country" class="form-control" placeholder="Please enter country"></InputText>
+            <InputText @bind-Value="contact.Country" class="form-control"></InputText>
         </div>
         <div class="col-md-12">
             <label class="form-label">Company </label>
-            <InputText @bind-Value="contact.Company" class="form-control" placeholder="Please enter company"></InputText>
+            <InputText @bind-Value="contact.Company" class="form-control"></InputText>
         </div>
-
         <div class="col-12">
             <label class="form-label">Message</label>
-            <InputTextArea @bind-Value="contact.Message" class="form-control" rows="3" placeholder="Please enter Message"></InputTextArea>
+            <InputTextArea @bind-Value="contact.Message" class="form-control" rows="3"></InputTextArea>
         </div>
         <div class="col-md-12">
             <div id="recaptcha_container"></div>
@@ -63,23 +63,25 @@
     public string reCAPTCHA_response;
     string googleApiKey = "Your API key";
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        await JS.InvokeVoidAsync("loadScript", "https://www.google.com/recaptcha/api.js");
+    //protected override async Task OnAfterRenderAsync(bool firstRender)
+    //{
+    //    await JS.InvokeVoidAsync("loadScript", "https://www.google.com/recaptcha/api.js");
 
-        await JS.InvokeVoidAsync("loadScript", "js/JsOfReCAPTCHA.js");
+    //    await JS.InvokeVoidAsync("loadScript", "js/JsOfReCAPTCHA.js");
 
-        if (firstRender)
-        {
-            WidgetId = await JS.InvokeAsync<int>("render_recaptcha", DotNetObjectReference.Create(this), "recaptcha_container", googleApiKey);
-        }
+    //    if (firstRender)
+    //    {
+    //        WidgetId = await JS.InvokeAsync<int>("render_recaptcha", DotNetObjectReference.Create(this), "recaptcha_container", googleApiKey);
+    //    }
 
-        await base.OnAfterRenderAsync(firstRender);
-    }
+    //    await base.OnAfterRenderAsync(firstRender);
+    //}
 
-    void Save()
+    async void Save()
     {
         //write code here to save this data
+
+        await EmailSender.SendEmailAsync(contact.Email, Product, contact.Message + "\n" + contact.Company);
     }
 
 
