@@ -25,7 +25,7 @@
             <div class="col-md-12 col-xl-12 text-center">
                 <h6>Create your ThorApps account today and get a $50-plan for free, valid for 30 days. Try out a single product, or trial the full suite of powerful apps to boost your data experience in SharePoint Online.</h6>
             </div>
-            <div class="col-md-12 align-items-center">
+            <div class="col-md-12 d-flex align-items-center">
                 <button type="button" class="btn btn-primary" @onclick="OpenModal">
                     LEARN HOW WE CALCULATE PRICE
                 </button>
@@ -183,31 +183,30 @@
                     <td><h6>BI SERVICE</h6></td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("BiService"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("BiService"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("BiService"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("BiService"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">Contact Us</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("BiService"))">Contact Us</button></li>
                         </ul>
                     </td>
                 </tr>
-
                 <tr>
                     <td></td>
                     <td>Best plan to test your data consumption</td>
@@ -216,7 +215,6 @@
                     <td>Best plan to execute approx. <strong>25,200 reports</strong></td>
                     <td>Best plan to execute approx. <strong>+52,000 reports</strong></td>
                 </tr>
-
                 <tr class="bg-secondary text-white">
                     <td>Create and export insighful dashboards</td>
                     <td><i class="bi-check"></i></td>
@@ -225,7 +223,6 @@
                     <td><i class="bi-check"></i></td>
                     <td><i class="bi-check"></i></td>
                 </tr>
-
                 <tr class="bg-secondary text-white">
                     <td>Export, schedule and distribute reports</td>
                     <td><i class="bi-check"></i></td>
@@ -234,47 +231,42 @@
                     <td><i class="bi-check"></i></td>
                     <td><i class="bi-check"></i></td>
                 </tr>
-
                 <tr>
                     <td><h6>LIST SYNC</h6></td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ListSync"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ListSync"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ListSync"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ListSync"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">Contact Us</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ListSync"))">Contact Us</button></li>
                         </ul>
                     </td>
                 </tr>
-
                 <tr>
                     <td></td>
                     <td>Best plan to test your data consumption</td>
                     <td>Best plan to sync approx. <strong>17,000 items</strong></td>
-                    <td>Best plan to sync approx. <strong></strong></td>
+                    <td>Best plan to sync approx. <strong>37,000 items</strong></td>
                     <td>Best plan to sync approx. <strong>82,000 items</strong></td>
                     <td>Best plan to sync approx. <strong>+177,000 items</strong></td>
                 </tr>
-
-
-
                 <tr class="bg-secondary text-white">
                     <td>Syncronise list data in real-time</td>
                     <td><i class="bi-check"></i></td>
@@ -283,7 +275,6 @@
                     <td><i class="bi-check"></i></td>
                     <td><i class="bi-check"></i></td>
                 </tr>
-
                 <tr class="bg-secondary text-white">
                     <td>Access to Microsoft SQL database</td>
                     <td><i class="bi-check"></i></td>
@@ -292,37 +283,34 @@
                     <td><i class="bi-check"></i></td>
                     <td><i class="bi-check"></i></td>
                 </tr>
-
-
                 <tr>
                     <td><h6>PROJECT SYNC</h6></td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ProjectSync"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ProjectSync"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ProjectSync"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">GET STARTED</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ProjectSync"))">GET STARTED</button></li>
                         </ul>
                     </td>
                     <td>
                         <ul class="list-group list-group-borderless border-0 py-3">
-                            <li class="list-group-item"><button class="btn btn-primary">Contact Us</button></li>
+                            <li class="list-group-item"><button class="btn btn-primary" @onclick="@(()=>OpenGetStartedModal("ProjectSync"))">Contact Us</button></li>
                         </ul>
                     </td>
                 </tr>
-
                 <tr class="bg-secondary text-white">
                     <td>Replicate project entities into SQL database</td>
                     <td><i class="bi-check"></i></td>
@@ -335,29 +323,36 @@
         </table>
     </div>
 </div>
-<ModalWindow @ref="howWeCalculate" Title="PRICING">
-    <div>
-        <p>Consumption is calculated by compute time. You can find out the per minute compute rate and monitor it from within each app.</p>
-        <p>Once your monthly plan limit is reached, you can either continue using ThorApps services, with additional usage charges applied to your invoice, or have the services disabled until the next payment period begins.</p>
-        <p>
-            <strong>- For BI Service:</strong><br />
-            BI Service price is based on compute time to run report executions and subscriptions deliveries.
-            A report execution is a user running 1 report in a web browser (either in the app or in a web part). The average report takes 3.5 seconds.<br />
-            A subscription delivery is a back-ground job that runs a report and either emails it or publishes it to a SharePoint Library. The average time per delivery is 1.9 seconds.
-        </p>
-        <p>
-            <strong>- For ListSync:</strong><br />
-            ListSync price is based on item sync's and list instance sync's.
-            An item sync is a user either creating, editing or deleting one item in a SharePoint list or library. The average time per item event is 2.7 seconds.<br />
-            List Instance Sync's are daily background jobs that cycle through all list instances configured for replication, and re-sync (just in case Microsoft dropped an event). The average time per list instance (average of about 8 items) is 2.5 seconds.
-        </p>
-    </div>
+<ThorApps.Pages.PricingContent.HowWeCalculate @ref="howWeCalculate"/>
+
+<ModalWindow @ref="getStartedModal">
+    @if (modalInfo == "BiService")
+    {
+        <ThorApps.Pages.PricingContent.BiServiceInfo/>
+    }
+    else if (modalInfo == "ListSync")
+    {
+        <ThorApps.Pages.PricingContent.ListSyncInfo/>
+    }
+    else if (modalInfo == "ProjectSync")
+    {
+        <ThorApps.Pages.PricingContent.ProjectSyncInfo/>
+    }
 </ModalWindow>
 @code {
-    ModalWindow howWeCalculate;
-
+    ThorApps.Pages.PricingContent.HowWeCalculate howWeCalculate;
+    ModalWindow getStartedModal;
+    string modalInfo = "";
     void OpenModal()
     {
         howWeCalculate.Show();
+        StateHasChanged();
+    }
+
+    void OpenGetStartedModal(string info)
+    {
+        modalInfo = info;
+        getStartedModal.Show();
+        StateHasChanged();
     }
 }
