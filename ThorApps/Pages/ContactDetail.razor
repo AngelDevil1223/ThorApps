@@ -5,6 +5,12 @@
 <h3 class="mb-3">Get in touch</h3>
 @if (contact != null)
 {
+    if (!string.IsNullOrEmpty(MessageStatus))
+    {
+        <div class="alert alert-success text-black">
+            <p><em>@MessageStatus</em></p>
+        </div>
+    }
     <EditForm Model=contact OnValidSubmit=Save class="row g-3">
         <DataAnnotationsValidator />
         <ValidationSummary />
@@ -59,6 +65,7 @@
     ContactModel contact = new();
 
     private int WidgetId;
+    string MessageStatus = string.Empty;
 
     public string reCAPTCHA_response;
     string googleApiKey = "Your API key";
@@ -80,8 +87,11 @@
     async void Save()
     {
         //write code here to save this data
-
+        MessageStatus = string.Empty;
         await EmailSender.SendEmailAsync(contact.Email, Product, contact.Message + "\n" + contact.Company);
+        MessageStatus = "Thank you for contacting ThorApps.";
+        contact = new ContactModel();
+        StateHasChanged();
     }
 
 
