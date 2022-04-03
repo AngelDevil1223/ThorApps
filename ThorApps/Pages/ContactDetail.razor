@@ -2,7 +2,7 @@
 @using ThorApps.Services
 @inject IJSRuntime JS
 
-<h3 class="mb-3">Get in touch</h3>
+@*<h3 class="mb-3">Get in touch</h3>*@
 @if (contact != null)
 {
     if (!string.IsNullOrEmpty(MessageStatus))
@@ -61,6 +61,8 @@
     public string Product { get; set; } = "General";
     [Parameter]
     public string ButtonTitle { get; set; } = "Send message";
+    [Parameter]
+    public string SuccessMessage { get; set; } = "Thank you for contacting ThorApps.";
 
     ContactModel contact = new();
 
@@ -89,7 +91,7 @@
         //write code here to save this data
         MessageStatus = string.Empty;
         await EmailSender.SendEmailAsync(contact.Email, Product, contact.Message + "\n" + contact.Company);
-        MessageStatus = "Thank you for contacting ThorApps.";
+        MessageStatus = SuccessMessage;
         contact = new ContactModel();
         StateHasChanged();
     }
