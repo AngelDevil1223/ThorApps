@@ -1,0 +1,15 @@
+﻿@inject NavigationManager Nav
+<a href="@Href" class="@Class" @onclick:preventDefault @onclick="NavigateToArea">@ChildContent</a>
+@code {
+    [Parameter]
+    public string Href { get; set; }
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+    [Parameter]
+    public string Class { get; set; }
+
+    void NavigateToArea()
+    {
+        Nav.NavigateTo(Href, true);
+    }
+}
