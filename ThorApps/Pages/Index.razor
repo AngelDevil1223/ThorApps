@@ -1,83 +1,99 @@
 ﻿@page "/"
-
-<section class="bg-primary position-relative">
-    <div class="container">
-        <div class="row align-items-center mb-2">
-
-            <div class="col-lg-5 z-index-9">
-                <h1 class="text-white">CONNECTING PEOPLE TO DATA</h1>
-                <p class="text-white mb-0">We streamline the way insight-driven companies experience SharePoint and other Microsoft products</p>
-                <div class="my-4">
-                    <Navigate Class="btn btn-primary mb-0" Href="/#contactUs">Get demo</Navigate>
+    <section class="py-7 position-relative" style="background-image: url(images/thorbackground.webp); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+        <div class="bg-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto text-center z-index-9">
+                    <h2 class="text-white">CONNECTING PEOPLE TO DATA</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-white mb-0 py-0">
+                            <li class="breadcrumb-item text-primary-hover">We streamline the way insight-driven companies experience SharePoint and other Microsoft products</li>
+                        </ol>
+                    </nav>
+                    @*<Navigate Href="/onpremise/#contactFrag" Class="btn btn-primary">Request quote</Navigate>*@
                 </div>
             </div>
-            <div class="col-lg-7">
-                <div class="row g-4">
-                    <div class="col-lg-4 mt-auto position-relative">
-                        <img src="images/bg/02.jpg" class="rounded-3 mb-0 mb-lg-9 mt-5 mt-lg-0 position-relative" alt="hero">
-                    </div>
-                    <div class="col-lg-8 position-relative">
-                        <div class="position-relative">
-                            <img src="images/bg/01.jpg" class="rounded-top-right-10" alt="hero">
+        </div>
+    </section>
+
+    @*<section class="bg-primary position-relative">
+            <div class="container">
+                <div class="row align-items-center mb-2">
+
+                    <div class="col-lg-5 z-index-9">
+                        <h1 class="text-white">CONNECTING PEOPLE TO DATA</h1>
+                        <p class="text-white mb-0">We streamline the way insight-driven companies experience SharePoint and other Microsoft products</p>
+                        <div class="my-4">
+                            <Navigate Class="btn btn-primary mb-0" Href="/#contactUs">Get demo</Navigate>
                         </div>
-                        <div class="col-7 position-absolute top-0 start-0 ms-n9 d-none d-lg-block">
-                            <div class="bg-white rounded-3 position-relative py-3 px-4">
-                                <h6>Try for free</h6>
-                                <p class="mb-0">Get 30 days free trial. No card is required.</p>
-                                <div class="icon-md bg-dark-soft bg text-dark rounded-circle position-absolute top-0 start-100 translate-middle">
-                                    <Navigate Class="btn btn-secondary mb-0" Href="/#contactUs"><i class="fa fa-mail-bulk fs-6"></i></Navigate>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-lg-4 mt-auto position-relative">
+                                <img src="images/bg/02.jpg" class="rounded-3 mb-0 mb-lg-9 mt-5 mt-lg-0 position-relative" alt="hero">
+                            </div>
+                            <div class="col-lg-8 position-relative">
+                                <div class="position-relative">
+                                    <img src="images/bg/01.jpg" class="rounded-top-right-10" alt="hero">
+                                </div>
+                                <div class="col-7 position-absolute top-0 start-0 ms-n9 d-none d-lg-block">
+                                    <div class="bg-white rounded-3 position-relative py-3 px-4">
+                                        <h6>Try for free</h6>
+                                        <p class="mb-0">Get 30 days free trial. No card is required.</p>
+                                        <div class="icon-md bg-dark-soft bg text-dark rounded-circle position-absolute top-0 start-100 translate-middle">
+                                            <Navigate Class="btn btn-secondary mb-0" Href="/#contactUs"><i class="fa fa-mail-bulk fs-6"></i></Navigate>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="container position-relative">
-        <div class="row g-4">
-            <div class="col-md-6 col-xl-4  d-flex align-items-stretch">
-                <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
-                    <img class="card-img-top" src="/images/dashboard.jpg" alt="BI SERVICE" />
-                    <span class="align-items-center"><a href="/biservicesharepoint" class="btn btn-primary">BI SERVICE</a></span>
-                    <p><h6 class="mb-3">Real-time collaboration for BI reports in SharePoint Online</h6></p>
-                    <p class="card-text">Get immediate access to your data from different sources using SQL Server Reporting in a format that works for you. Create, export and schedule stunning dashboards and get actionable insights at your fingertips.</p>
+        </section>*@
+    <section>
+        <div class="container position-relative">
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4  d-flex align-items-stretch">
+                    <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
+                        <img class="card-img-top" src="/images/dashboard.jpg" alt="BI SERVICE" />
+                        <span class="align-items-center"><a href="/biservicesharepoint" class="btn btn-primary">BI SERVICE</a></span>
+                        <p><h6 class="mb-3">Real-time collaboration for BI reports in SharePoint Online</h6></p>
+                        <p class="card-text">Get immediate access to your data from different sources using SQL Server Reporting in a format that works for you. Create, export and schedule stunning dashboards and get actionable insights at your fingertips.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-xl-4  d-flex align-items-stretch">
-                <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
-                    <img class="card-img-top" src="/images/sharepoint.jpg" alt="LIST SYNC" />
-                    <span class="align-items-center"><a href="/listsyncsharepoint" class="btn btn-primary">LIST SYNC</a></span>
-                    <p><h6 class="mb-3">Replicate your list items to SQL in real-time in SharePoint Online</h6></p>
-                    <p class="card-text">Gain immediate access to all of your SharePoint lists in one place. With data collated and stored in SQL, you’ll be running reports in a fraction of the time.</p>
+                <div class="col-md-6 col-xl-4  d-flex align-items-stretch">
+                    <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
+                        <img class="card-img-top" src="/images/sharepoint.jpg" alt="LIST SYNC" />
+                        <span class="align-items-center"><a href="/listsyncsharepoint" class="btn btn-primary">LIST SYNC</a></span>
+                        <p><h6 class="mb-3">Replicate your list items to SQL in real-time in SharePoint Online</h6></p>
+                        <p class="card-text">Gain immediate access to all of your SharePoint lists in one place. With data collated and stored in SQL, you’ll be running reports in a fraction of the time.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-xl-4  d-flex align-items-stretch">
-                <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
-                    <img class="card-img-top" src="/images/projectManagement.jpg" alt="PROJECT SYNC" />
-                    <span class="align-items-center"><a href="/projectsynconline" class="btn btn-primary">PROJECT SYNC</a></span>
-                    <p><h6 class="mb-3">Access all your entities across Project Online</h6></p>
-                    <p class="card-text">Compile a complete picture of your project replicating project entities into SQL database in just a fraction of the time. Be ready for your next meeting, armed with immediate access to accurate data.</p>
+                <div class="col-md-6 col-xl-4  d-flex align-items-stretch">
+                    <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
+                        <img class="card-img-top" src="/images/projectManagement.jpg" alt="PROJECT SYNC" />
+                        <span class="align-items-center"><a href="/projectsynconline" class="btn btn-primary">PROJECT SYNC</a></span>
+                        <p><h6 class="mb-3">Access all your entities across Project Online</h6></p>
+                        <p class="card-text">Compile a complete picture of your project replicating project entities into SQL database in just a fraction of the time. Be ready for your next meeting, armed with immediate access to accurate data.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 text-center mx-auto">
-                <h2 class="mb-3">What people say</h2>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 text-center mx-auto">
+                    <h2 class="mb-3">What people say</h2>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="tiny-slider arrow-round arrow-gray arrow-hover">
-                    <div class="tiny-slider-inner my-3" data-autoplay="true" data-edge="20" data-arrow="true" data-dots="false" data-items-xl="3" data-items-md="2" data-items-sm="1">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tiny-slider arrow-round arrow-gray arrow-hover">
+                        <div class="tiny-slider-inner my-3" data-autoplay="true" data-edge="20" data-arrow="true" data-dots="false" data-items-xl="3" data-items-md="2" data-items-sm="1">
                             <div>
                                 <div class="card card-body card-bg-scale-border rounded-4 rounded-bottom-right-0 px-3 py-4">
                                     <div class="card-header pb-0">
@@ -166,67 +182,66 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="bg-secondary">
-    <div class="container position-relative">
+    <section class="bg-secondary">
+        <div class="container position-relative">
 
-        <div class="row g-4">
-            <div class="col-md-6 col-xl-4 d-flex align-items-stretch">
-                <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
-                    <div class="icon-md fs-6 text-primary bg-default">
-                        <i class="bi bi-bar-chart"></i>
+            <div class="row g-4">
+                <div class="col-md-6 col-xl-4 d-flex align-items-stretch">
+                    <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
+                        <div class="icon-md fs-6 text-primary bg-default">
+                            <i class="bi bi-bar-chart"></i>
+                        </div>
+                        <h6 class="mb-3">SharePoint Expert</h6>
+                        <p class="card-text">
+                            More than 200,000 organizations and 190 million people are using SharePoint to share and manage content, knowledge, and applications to empower teamwork, quickly find information, and seamlessly collaborate across the organization.
+                        </p>
+                        <a class="btn btn-primary" href="/aboutUs">Learn more</a>
                     </div>
-                    <h6 class="mb-3">SharePoint Expert</h6>
-                    <p class="card-text">
-                        More than 200,000 organizations and 190 million people are using SharePoint to share and manage content, knowledge, and applications to empower teamwork, quickly find information, and seamlessly collaborate across the organization.
-                    </p>
-                    <a class="btn btn-primary" href="/aboutUs">Learn more</a>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-xl-4 d-flex align-items-stretch">
-                <div class="card card-body shadow  rounded-4 rounded-bottom-right-0 p-4">
-                    <div class="icon-md fs-6 text-primary bg-default">
-                        <i class="bi bi-calendar"></i>
+                <div class="col-md-6 col-xl-4 d-flex align-items-stretch">
+                    <div class="card card-body shadow  rounded-4 rounded-bottom-right-0 p-4">
+                        <div class="icon-md fs-6 text-primary bg-default">
+                            <i class="bi bi-calendar"></i>
+                        </div>
+                        <h6 class="mb-3">Microsoft Certified</h6>
+                        <p class="card-text">By being a Certified Microsoft Partner we have access to the latest training, resources and dedicated support. This means we are always up-to-date on the latest features, releases and early product information to provide our clients a robust, seamless SharePoint experience. </p>
+                        <a class="btn btn-primary" href="/aboutUs">Learn more</a>
                     </div>
-                    <h6 class="mb-3">Microsoft Certified</h6>
-                    <p class="card-text">By being a Certified Microsoft Partner we have access to the latest training, resources and dedicated support. This means we are always up-to-date on the latest features, releases and early product information to provide our clients a robust, seamless SharePoint experience. </p>
-                    <a class="btn btn-primary" href="/aboutUs">Learn more</a>
                 </div>
-            </div>
 
-            <div class="col-md-6 col-xl-4 d-flex align-items-stretch">
-                <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
-                    <div class="icon-md fs-6 text-primary bg-default">
-                        <i class="bi bi-folder"></i>
+                <div class="col-md-6 col-xl-4 d-flex align-items-stretch">
+                    <div class="card card-body shadow rounded-4 rounded-bottom-right-0 p-4">
+                        <div class="icon-md fs-6 text-primary bg-default">
+                            <i class="bi bi-folder"></i>
+                        </div>
+                        <h6 class="mb-3">Reliable Partners</h6>
+                        <p class="card-text">We are proud to partner with <a href="https://www.bgisolutions.com.au/" target="_blank">BGI Solutions</a>, an Australian company that masters our tools to deliver best-in-class service to our clients worldwide. Their agile team of IT specialists is ready to assist you with the configuration and implementation of our apps.</p>
+                        <a class="btn btn-primary" href="https://www.bgisolutions.com.au/">Learn more</a>
                     </div>
-                    <h6 class="mb-3">Reliable Partners</h6>
-                    <p class="card-text">We are proud to partner with <a href="https://www.bgisolutions.com.au/" target="_blank">BGI Solutions</a>, an Australian company that masters our tools to deliver best-in-class service to our clients worldwide. Their agile team of IT specialists is ready to assist you with the configuration and implementation of our apps.</p>
-                    <a class="btn btn-primary" href="https://www.bgisolutions.com.au/">Learn more</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<section class="bg-primary text-primary">
-    <div class="container position-relative">
-        <div class="row g-4">
-            <h6 class="col-md-12">Get started today! No credit card required.</h6>
-            <h4 class="col-md-12">Request your 30-day trial and get $50 credit to test BI Service in your own SharePoint environment</h4>
-            <p>
-                Upon submitting this form, you will be provided with the installation instructions for BI Service. These instructions will lead you through adding the app to your SharePoint site and provide further links to related documentation.
-            </p>
-            <div name="contactUs" id="contactUs">
-                <ContactDetail ButtonTitle="Send" />
+    <section class="bg-primary text-primary">
+        <div class="container position-relative">
+            <div class="row g-4">
+                <h4 class="col-md-12 text-white">Contact us</h4>
+                <h6 class="col-md-12">
+                    Get in touch to request a quote or learn more about our apps
+                </h6>
+                <div name="contactUs" id="contactUs">
+                    <ContactDetail ButtonTitle="Send" />
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
